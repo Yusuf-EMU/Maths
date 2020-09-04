@@ -2,14 +2,9 @@ float Factorial(float input) {
     return input * (input - 1);
 }
 
-int fastmod(const int x, const int y) {
-    if (x >= y) {
-        return x % y;
-    } else if (x < 0) {
-        return (x % y + y) % y;
-    } else {
-        return x;
-    }
+unsigned fastmod(unsigned int x, unsigned int y)
+{
+  return y & (y-1) ? x % y : x & (y-1);
 }
 
 float Expon(float input, float exp) {
