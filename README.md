@@ -1,3 +1,7 @@
+
+# Why
+This header trades acuracy for performance. It cant handle big numbers though
+
 # Maths
 Funtions
 
