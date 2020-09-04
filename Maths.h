@@ -1,6 +1,17 @@
 float Factorial(float input) {
     return input * (input - 1);
 }
+
+int fastmod(const int x, const int y) {
+    if (x >= y) {
+        return x % y;
+    } else if (x < 0) {
+        return (x % y + y) % y;
+    } else {
+        return x;
+    }
+}
+
 float Expon(float input, float exp) {
     float placeHolder = 1;
     for(int i = 1; i < input; i++) {
@@ -11,6 +22,7 @@ float Expon(float input, float exp) {
 float Cosine(float input) {
     float returnval;
     float sum=1, t=1;
+    
     for(int i=1;i<=80;i++)
     {
         t=t*(-1)*input*input/(2*i*(2*i-1));
