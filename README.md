@@ -20,3 +20,5 @@ Cotangent(float input); Takes a input and returns the Cotangent.
 Secant(float input); Takes a input and returns the Secant.
 
 Cosecant(float input); Takes a input and returns the Cosecant.
+
+fastmod(unsigned int x, unsigned int y) takes 2 ints and returns x % y(note this is faster than the conventional mod function).
